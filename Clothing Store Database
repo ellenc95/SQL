@@ -1,0 +1,41 @@
+/** Clothing Store: 
+Shirt (12) (Top) (No) (Pink)
+Pants (20) (Bottom) (Yes) (Brown) 
+Tank (10) (Top) (Yes) (White) 
+Shorts (8) (Bottom) (No) (Green) 
+Jacket (35) (Outerwear) (No) (Black) 
+Raincoat (40) (Outerwear) (No) (Black)
+Dress (35) (Summer) (Yes) (Floral) 
+Sunglasses (10) (Summer) (Yes) (Grey) 
+Flip Flops (12) (Shoes) (No) (Red) 
+Running Shoes (25) (Shoes) (No) (White) 
+Socks (4) (Bottom) (No) (White) 
+Mittens (3) (Outerwear) (No) (Pink) 
+Jeans (25) (Bottom) (Yes) (Blue) 
+Sweatshirt (15) (Top) (No) (Purple) 
+Skirt (12) (Bottom) (YES) (Orange) 
+**/  
+
+CREATE TABLE Item (id INTEGER PRIMARY KEY, Name TEXT, Price INTEGER, Catergory TEXT, Sale TEXT, Color TEXT);  
+
+INSERT INTO Item VALUES (1, "Shirt", 12, "Top", "No", "Pink"); 
+INSERT INTO Item VALUES (2, "Pants", 20, "Bottom", "Yes", "Brown"); 
+INSERT INTO Item VALUES (3, "Tank", 10, "Top", "Yes", "White"); 
+INSERT INTO Item VALUES (4, "Shorts", 8, "Bottom", "No", "Green"); 
+INSERT INTO Item VALUES (5, "Jacket", 35, "Outerwear", "No", "Black"); 
+INSERT INTO Item VALUES (6, "Raincoat", 40, "Outerwear", "No", "Black"); 
+INSERT INTO Item VALUES (7, "Dress", 35, "Summer", "Yes", "Floral"); 
+INSERT INTO Item VALUES (8, "Sunglasses", 10, "Summer", "Yes", "Grey"); 
+INSERT INTO Item VALUES (9, "Flip Flops", 12, "Shoes", "No", "Red"); 
+INSERT INTO Item VALUES (10, "Running Shoes", 25, "Shoes", "No", "White"); 
+INSERT INTO Item VALUES (11, "Socks", 4, "Bottom", "No", "White"); 
+INSERT INTO Item VALUES (12, "Mittens", 3, "Outerwear", "No", "Pink"); 
+INSERT INTO Item VALUES (13, "Jeans", 25, "Bottom", "Yes", "Blue"); 
+INSERT INTO Item VALUES (14, "Sweatshirt", 15, "Top", "No", "Purple"); 
+INSERT INTO Item VALUES (15, "Skirt", 12, "Bottom", "Yes", "Purple");
+
+SELECT * FROM Item ORDER BY price;  
+
+SELECT price, MAX(price) FROM Item;  
+
+SELECT* FROM Item WHERE Price < 12; 
